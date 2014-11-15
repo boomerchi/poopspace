@@ -1,8 +1,12 @@
 # The Main Page
 GET			/						controllers.AppController.index()
 GET			/about					controllers.AppController.about()
+GET			/feed					controllers.AppController.feed()
+GET			/map					controllers.AppController.map()
+GET			/add					controllers.AppController.add()
 GET			/myPoops				controllers.AppController.myPoops()
+GET			/poop/:id				controllers.AppController.poop(id: Long)
 
-POST		/add					controllers.AppController.add()
-POST		/nearbyPoops			controllers.AppControllers.nearbyPoops()
-POST		/MyPoops				controllers.AppController.myPoops()
+POST		/api/add				controllers.AppController.apiAdd()
+POST		/api/nearbyPoops		controllers.AppController.apiNearbyPoops()
+POST		/api/myPoops			controllers.AppController.apiMyPoops()
