@@ -1,0 +1,8 @@
+# The Main Page
+GET			/						controllers.AppController.index()
+GET			/about					controllers.AppController.about()
+GET			/myPoops				controllers.AppController.myPoops()
+
+POST		/add					controllers.AppController.add()
+POST		/nearbyPoops			controllers.AppControllers.nearbyPoops()
+POST		/MyPoops				controllers.AppController.myPoops()
